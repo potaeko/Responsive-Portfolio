@@ -11,9 +11,9 @@ body {
   margin: 0;
 }
 
-
-
-/* start hover styling */    /*Pseudocode*/
+/*========================================
+              Hover State
+==========================================*/
 
 #logo:hover,
 input[type=submit]:hover {
@@ -29,26 +29,25 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* end hover styling */
+/*=====================================
+             General Styling 
+======================================*/
 
-/* general styling */
-
-.container {            /*page container size &center*/
+.container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
-
 }
 
-h1, 
+h1,
 h2,
 h3,
-p {                         /*Margin between*/
+p {
   margin-bottom: 20px;
 }
 
-p:last-child {            /* Last child on P index.html*/
+p:last-child {
   margin-bottom: 0;
 }
 
@@ -72,22 +71,23 @@ h3 {
   font-size: 22px;
 }
 
-/* header */
+/*=======================================
+                   Header 
+=========================================*/
 
-#masthead {                    /*Header background*/
-  position: fixed;             /*Always at top*/
+#masthead {
+  /*Always at top*/
+  position: fixed;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
   color: #fff;
   border-bottom: 4px solid gold;
-  /*background*/
-background: url("../images/escheresque_ste.png");
-
+  background: url("../images/escheresque_ste.png");
 }
 
-#logo {                           /*Teera Kositpantavong Header*/
+#logo {
   float: left;
   width: 400px;
   height: 90px;
@@ -101,29 +101,28 @@ background: url("../images/escheresque_ste.png");
   background: url("../images/dark-triangles.png");
 }
 
-
-
 nav {
   float: right;
   margin-top: 25px;
 }
 
-nav a {                            /* a condition */
+nav a {
   display: inline-block;
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
   color: #999;
   text-decoration: none;
-  border-left: 1px solid #efefef;  /* | linebetween */
+  border-left: 1px solid #efefef;
 }
 
-nav a:first-child {               /* pseudocode */
+nav a:first-child {
   border-left: 0 none;
 }
 
-/* footer */
-
+/*========================================
+                    footer
+=========================================*/
 footer {
   padding: 30px 0;
   clear: both;
@@ -144,7 +143,8 @@ body {
   height: 100%;
 }
 
-.wrapper {                  /*???????*/
+.wrapper {
+  /*???????*/
   height: auto !important;
   height: 100%;
   min-height: 100%;
@@ -159,12 +159,15 @@ footer,
 
 /* end sticky footer styling */
 
-/* sidebar */
+/*======================================
+                  sidebar 
+=======================================*/
 
 .sidebar {
   float: right;
   width: 100%;
-  max-width: 270px;              /*sidebar size*/
+  max-width: 270px;
+  /*sidebar size*/
   padding: 30px;
   margin-bottom: 20px;
   background: url("../images/bedge_grunge.png");
@@ -190,14 +193,18 @@ h3,
   margin-right: 0;
 }
 
-/* main */
+/*==================================
+                main 
+===================================*/
 
-#main-container {            /*seperate padding from Header*/
+#main-container {
+  /*seperate padding from Header*/
   padding-top: 130px;
 }
 
-.main-section {                
-  float: left;                  /*make photo to leftside*/
+.main-section {
+  /*make photo to leftside*/
+  float: left;
   width: 100%;
   max-width: 650px;
   padding: 30px;
@@ -205,7 +212,10 @@ h3,
   background: url("../images/ignasi_pattern_s.png");
   border: 1px solid #ddd;
 }
-/*Portfolio*/
+
+/*==================================
+              Portfolio
+===================================*/
 .work {
   position: relative;
   float: left;
@@ -237,6 +247,7 @@ h3,
   background: #4aaaa5;
   border-bottom: 0;
 }
+
 .auth-image {
   float: left;
   width: 200px;
@@ -245,9 +256,9 @@ h3,
   margin-right: 25px;
 }
 
-
-/* contact page */
-
+/*=================================
+          contact page
+==================================*/
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -286,67 +297,62 @@ input[type=submit] {
   border: 0 none;
 }
 
-   /*980PX screen*/
-@media screen and (max-width: 980px ){   /*980PX desktop*/
-    
- .container {            /*page container&center */
+/*=====================================
+            980PX screen
+=======================================*/
+@media screen and (max-width: 980px) {
+  .container {
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
     clear: both;
-    }
-
-  #main-container {            /*seperate padding from Header*/
-    padding-top: 120px;
-    }
-
-  .main-section {                /*make photo to leftside*/
- 
-    max-width: 60%;
-    }
-
   }
 
-    /*768PX screen*/
-@media screen and (max-width: 768px ){   /*tablet*/
+  #main-container {
+    /*seperate padding from Header*/
+    padding-top: 120px;
+  }
 
-  .container {            /*page container&center */
+  .main-section {
+    max-width: 60%;
+  }
+}
+
+/*====================================
+              768PXscreen
+=====================================*/
+@media screen and (max-width: 768px) {
+  .container {
     width: 100%;
     max-width: 95%;
     margin: 0 auto;
     clear: both;
-    }
+  }
 
-  #main-container {            /*seperate padding from Header*/
+  #main-container {
+    /*seperate padding from Header*/
     padding-top: 125px;
-    }
+  }
 
-  .main-section {                /*photo section*/
- 
+  .main-section {
     max-width: 100%;
-    }
+  }
 
   .sidebar {
-  
-    max-width: 100% ;              /*sidebar size*/
+    max-width: 100%;
+    /*sidebar size*/
     padding: 30px;
     margin-bottom: 30px;
     background: url("../images/bedge_grunge.png");
     border: 1px solid #ddd;
-    }  
-   
   }
+}
 
-
-
-
-
-
-
-     /*640PX screen*/
-@media screen and (max-width: 640px ){   /*phone*/
-
-  #masthead {                    /*Header background*/
+/*==================================
+              640PX screen
+====================================*/
+@media screen and (max-width: 640px) {
+  #masthead {
     position: static;
     z-index: 99;
     width: 100%;
@@ -354,12 +360,12 @@ input[type=submit] {
     overflow: scroll;
     color: #fff;
     border-bottom: 4px solid gold;
-    /*background*/
     background: url("../images/escheresque_ste.png");
 
   }
 
-  #logo {                           /*Teera Kositpantavong Header*/
+  #logo {
+    /*Teera Kositpantavong Header*/
     float: left;
     width: 100%;
     height: 90px;
@@ -371,86 +377,80 @@ input[type=submit] {
     text-align: center;
     text-decoration: none;
     background: url("../images/dark-triangles.png");
-    }
+  }
 
 
 
-  nav {              /*check with solution*/
-    overflow:auto;
+  nav {
+    overflow: auto;
     float: left;
     margin: 25px auto;
-    width:100%;
+    width: 100%;
     height: 30px;
-      
-    
-
   }
 
-  nav a {                            /* a condition */
-  display: inline-block;
-  width: 30%;                        /*Why 30% how come 33.3% doesn't work*/
-  margin:auto;
-  text-align: center;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;  /* | linebetween */
+  nav a {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
   }
 
-
-  nav a:first-child {               /* pseudocode */
+  nav a:first-child {
     border-left: 0 none;
   }
 
-  .container {            /*page container&center */
+  .container {
+    /*page container&center */
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     clear: both;
-    }
+  }
 
-  #main-container {            /*seperate padding from Header*/
+  #main-container {
+    /*seperate padding from Header*/
     padding-top: 0px;
-    padding-right:15px;
+    padding-right: 15px;
     padding-left: 15px;
-    }
+  }
 
-  .main-section {                /*photo section*/
- 
+  .main-section {
+    /*photo section*/
     max-width: 100%;
-    }
+  }
 
   .sidebar {
-  
-    max-width: 100% ;              /*sidebar size*/
+    max-width: 100%;
+    /*sidebar size*/
     padding: 30px;
     margin-bottom: 30px;
     background: url("../images/bedge_grunge.png");
     border: 1px solid #ddd;
-    }  
-   .auth-image {
-  clear: both;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-    }
+  }
+
+  .auth-image {
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
 
   .work {
-  position: relative;
-  float: left;
-  width: 100%;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-  .work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-  }
-  
-} 
-   
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 20px 0 25px;
+    overflow: auto;
   }
 
-    
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
   }
+}
