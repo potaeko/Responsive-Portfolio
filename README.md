@@ -1,2 +1,2 @@
 # Responsive-Portfolio
-The First time exposed to media query
+First time exposed to CSS Media Queries
