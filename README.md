@@ -1,4 +1,3 @@
-# Responsive-Portfolio
-First time exposed to CSS Media Queries
-
+# Vesco Project Front-end Responsive Webpage
+---
 ### Visit webpage: https://potaeko.github.io/Vesco-Project-Frontend/
