@@ -1,3 +1,3 @@
-# Vesco Project Front-end Responsive Webpage
+# Front-end Responsive Webpage
 
-### Visit webpage: https://potaeko.github.io/Vesco-Project-Frontend/
+### Visit webpage: https://potaeko.github.io/Responsive-Portfolio/
